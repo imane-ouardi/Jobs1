@@ -7,17 +7,14 @@
     <title>
       Play | Free Tailwind CSS Template for Startup and SaaS By TailGrids
     </title>
-    <link
-      rel="shortcut icon"
-      href="assets/images/favicon.png"
+    <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="assets/css/animate.css" />
-    <link rel="stylesheet" href="./src/css/tailwind.css" />
-
+    <link rel="stylesheet" href="{{ asset('css/swiper-bundle.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/animate.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}" />
     <!-- ==== WOW JS ==== -->
-    <script src="assets/js/wow.min.js"></script>
+    <script src="{{ asset('js/wow.min.js') }}"></script>
     <script>
       new WOW().init();
     </script>
@@ -1146,7 +1143,7 @@
               <div class="mb-8 overflow-hidden rounded-[5px]">
                 <a href="blog-details.html" class="block">
                   <img
-                    src="./assets/images/blog/blog-01.jpg"
+                    src="{{ asset('images/blog/blog-01.jpg') }}"
                     alt="image"
                     class="w-full transition group-hover:rotate-6 group-hover:scale-125"
                   />
@@ -1180,7 +1177,7 @@
               <div class="mb-8 overflow-hidden rounded-[5px]">
                 <a href="blog-details.html" class="block">
                   <img
-                    src="./assets/images/blog/blog-02.jpg"
+                    src="{{ asset('images/blog/blog-02.jpg') }}"
                     alt="image"
                     class="w-full transition group-hover:rotate-6 group-hover:scale-125"
                   />
@@ -1214,7 +1211,7 @@
               <div class="mb-8 overflow-hidden rounded-[5px]">
                 <a href="blog-details.html" class="block">
                   <img
-                    src="./assets/images/blog/blog-03.jpg"
+                    src="{{ asset('images/blog/blog-03.jpg') }}"
                     alt="image"
                     class="w-full transition group-hover:rotate-6 group-hover:scale-125"
                   />
@@ -1286,12 +1283,12 @@
       <span class="block w-px h-4 bg-stroke dark:bg-dark-3"></span>
       <span class="block w-full max-w-[88px]">
         <img
-          src="./assets/images/brands/tailgrids.svg"
+          src="{{ asset('images/brands/tailgrids.svg') }}"
           alt="tailgrids"
           class="dark:hidden"
         />
         <img
-          src="./assets/images/brands/tailgrids-white.svg"
+          src="{{ asset('images/brands/tailgrids-white.svg') }}"
           alt="tailgrids"
           class="hidden dark:block"
         />
@@ -1301,8 +1298,8 @@
 
     <!-- ====== All Scripts -->
 
-    <script src="assets/js/swiper-bundle.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="{{ asset('js/swiper-bundle.min.js') }}"></script>
+    <script src="{{ asset('js/main.js') }}"></script>
     <script>
       // ==== for menu scroll
       const pageLink = document.querySelectorAll(".ud-menu-scroll");
