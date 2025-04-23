@@ -2,7 +2,7 @@
 <div class="container px-4 mx-auto">
   <div class="relative flex items-center justify-between -mx-4">
     <div class="max-w-full px-4 w-60">
-      <a href="index.html" class="block w-full py-5 navbar-logo">
+      <a href="{{ route('home') }}" class="block w-full py-5 navbar-logo">
         <img  src="assets/images/logo/logo-white.svg" alt="logo" class="w-full header-logo"/>
       </a>
     </div>
@@ -75,7 +75,7 @@
             </li>
             <li class="relative group">
               <a
-                href="blog-grids.html"
+                href="#blog"
                 class="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10"
               >
                 Blog
@@ -159,13 +159,13 @@
         </label>
         <div class="hidden sm:flex">
           <a
-            href="signin.html"
+            href="{{ route('signin') }}"
             class="loginBtn px-[22px] py-2 text-base font-medium text-white hover:opacity-70"
           >
             Sign In
           </a>
           <a
-            href="signup.html"
+            href="{{ route('signup') }}"
             class="px-6 py-2 text-base font-medium text-white duration-300 ease-in-out rounded-md bg-white/20 signUpBtn hover:bg-white/100 hover:text-dark"
           >
             Sign Up

@@ -1,4 +1,4 @@
-@extends('layout.app')
+@extends('layouts.app')
 
 @section('content')
 <!-- ====== Navbar Section Start -->
@@ -1121,7 +1121,7 @@
           <div class="w-full px-4 md:w-1/2 lg:w-1/3">
             <div class="mb-10 wow fadeInUp group" data-wow-delay=".1s">
               <div class="mb-8 overflow-hidden rounded-[5px]">
-                <a href="blog-details.html" class="block">
+                <a href="{{ route('blog') }}" class="block">
                   <img
                     src="{{ asset('images/blog/blog-01.jpg') }}"
                     alt="image"
@@ -1155,7 +1155,7 @@
           <div class="w-full px-4 md:w-1/2 lg:w-1/3">
             <div class="mb-10 wow fadeInUp group" data-wow-delay=".15s">
               <div class="mb-8 overflow-hidden rounded-[5px]">
-                <a href="blog-details.html" class="block">
+                <a href="{{ route('blog') }}" class="block">
                   <img
                     src="{{ asset('images/blog/blog-02.jpg') }}"
                     alt="image"
@@ -1189,7 +1189,7 @@
           <div class="w-full px-4 md:w-1/2 lg:w-1/3">
             <div class="mb-10 wow fadeInUp group" data-wow-delay=".2s">
               <div class="mb-8 overflow-hidden rounded-[5px]">
-                <a href="blog-details.html" class="block">
+                <a href="{{ asset('images/blog/blog-03.jpg') }}" class="block">
                   <img
                     src="{{ asset('images/blog/blog-03.jpg') }}"
                     alt="image"
@@ -1251,29 +1251,7 @@
     <!-- ====== Back To Top End -->
 
     <!-- ====== Made With Button Start -->
-    <a
-      target="_blank"
-      rel="nofollow noopener"
-      class="fixed bottom-8 left-4 z-999 inline-flex items-center gap-[10px] rounded-lg bg-white px-[14px] py-2 shadow-2 dark:bg-dark-2 sm:left-9"
-      href="https://tailgrids.com/"
-    >
-      <span class="text-base font-medium text-dark-3 dark:text-dark-6">
-        Made with
-      </span>
-      <span class="block w-px h-4 bg-stroke dark:bg-dark-3"></span>
-      <span class="block w-full max-w-[88px]">
-        <img
-          src="{{ asset('images/brands/tailgrids.svg') }}"
-          alt="tailgrids"
-          class="dark:hidden"
-        />
-        <img
-          src="{{ asset('images/brands/tailgrids-white.svg') }}"
-          alt="tailgrids"
-          class="hidden dark:block"
-        />
-      </span>
-    </a>
+  <x-made/>
     <!-- ====== Made With Button End -->
 
     <!-- ====== All Scripts -->

@@ -222,7 +222,7 @@ data-wow-delay=".15s"
         <h4 class="text-lg font-semibold text-white mb-9">Latest blog</h4>
         <div class="flex flex-col gap-8">
           <a
-            href="blog-details.html"
+            href="{{ route('blog') }}"
             class="group flex items-center gap-[22px]"
           >
             <div class="overflow-hidden rounded-sm">
@@ -238,7 +238,7 @@ data-wow-delay=".15s"
             </span>
           </a>
           <a
-            href="blog-details.html"
+            href="{{ route('blog') }}"
             class="group flex items-center gap-[22px]"
           >
             <div class="overflow-hidden rounded-sm">

@@ -12,8 +12,8 @@
             Main Features Of Play
           </h2>
           <p class="text-base text-body-color dark:text-dark-6">
-            There are many variations of passages of Lorem Ipsum available
-            but the majority have suffered alteration in some form.
+            Search all the open positions on the web. Get your own personalized salary estimate. Read reviews on over 30000+
+             companies worldwide
           </p>
         </div>
       </div>
