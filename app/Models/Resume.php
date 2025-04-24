@@ -4,14 +4,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Category extends Model
+class Resume extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name', 'slug'];
+    protected $fillable = ['user_id', 'file'];
 
-    public function jobs()
+    public function user()
     {
-        return $this->hasMany(Job::class);
+        return $this->belongsTo(User::class);
     }
 }

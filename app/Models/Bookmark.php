@@ -4,14 +4,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Category extends Model
+class Bookmark extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name', 'slug'];
+    protected $fillable = ['user_id'];
 
-    public function jobs()
+    public function bookmarkable()
     {
-        return $this->hasMany(Job::class);
+        return $this->morphTo();
     }
 }

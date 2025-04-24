@@ -1,21 +1,33 @@
 <?php
-
 namespace Database\Seeders;
 
-use App\Models\User;
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\User;
+use Illuminate\Support\Facades\Hash;
 
 class UserSeeder extends Seeder
 {
-public function run()
-{
-    // Check if user exists first
-    if (!User::where('email', 'test@example.com')->exists()) {
+    public function run(): void
+    {
         User::create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
+            'name' => 'Admin User',
+            'email' => 'admin@example.com',
             'password' => Hash::make('password'),
-            // ... other fields
+            'role' => 'admin',
+        ]);
+
+        User::create([
+            'name' => 'Employer User',
+            'email' => 'employer@example.com',
+            'password' => Hash::make('password'),
+            'role' => 'employer',
+        ]);
+
+        User::create([
+            'name' => 'Employee User',
+            'email' => 'employee@example.com',
+            'password' => Hash::make('password'),
+            'role' => 'employee',
         ]);
     }
+}
