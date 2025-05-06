@@ -3,54 +3,58 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\CompanyResource\Pages;
-use App\Filament\Resources\CompanyResource\RelationManagers;
 use App\Models\Company;
 use Filament\Forms;
-use Filament\Forms\Form;
-use Filament\Resources\Resource;
 use Filament\Tables;
-use Filament\Tables\Table;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Filament\Resources\Resource;
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\Textarea;
+use Filament\Tables\Columns\TextColumn;
 
 class CompanyResource extends Resource
 {
     protected static ?string $model = Company::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-building-office';
+    protected static ?string $navigationGroup = 'Management';
+    protected static ?string $navigationLabel = 'Companies';
 
-    public static function form(Form $form): Form
+    public static function form(Forms\Form $form): Forms\Form
     {
-        return $form
-            ->schema([
-                //
-            ]);
+        return $form->schema([
+            TextInput::make('name')
+                ->required()
+                ->maxLength(255),
+
+            TextInput::make('email')
+                ->email()
+                ->required()
+                ->maxLength(255),
+
+            TextInput::make('website')
+                ->url()
+                ->nullable()
+                ->maxLength(255),
+
+            TextInput::make('location')
+                ->nullable()
+                ->maxLength(255),
+
+            Textarea::make('description')
+                ->rows(5)
+                ->nullable(),
+        ]);
     }
 
-    public static function table(Table $table): Table
+    public static function table(Tables\Table $table): Tables\Table
     {
-        return $table
-            ->columns([
-                //
-            ])
-            ->filters([
-                //
-            ])
-            ->actions([
-                Tables\Actions\EditAction::make(),
-            ])
-            ->bulkActions([
-                Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\DeleteBulkAction::make(),
-                ]),
-            ]);
-    }
-
-    public static function getRelations(): array
-    {
-        return [
-            //
-        ];
+        return $table->columns([
+            TextColumn::make('id')->sortable(),
+            TextColumn::make('name')->searchable()->sortable(),
+            TextColumn::make('email')->searchable()->sortable(),
+            TextColumn::make('location')->sortable(),
+            TextColumn::make('created_at')->date()->sortable(),
+        ]);
     }
 
     public static function getPages(): array

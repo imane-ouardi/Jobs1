@@ -18,6 +18,21 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
+
+
+{{-- 
+
+
+
+
+    
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/responsive.css" rel="stylesheet">
+      
+        <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+        <link rel="icon" href="images/favicon.png" type="image/x-icon"> --}}
+
     <!-- ==== WOW JS ==== -->
     <script src="{{ asset('js/wow.min.js') }}"></script>
     <script>
@@ -29,7 +44,7 @@
     {{-- Livewire Styles --}}
     @livewireStyles
 </head>
-<body class="bg-white text-body dark:bg-dark dark:text-white">
+<body class=" bg-white text-body dark:bg-dark dark:text-white ">
 
     {{-- محتوى الصفحة --}}
     @yield('content')

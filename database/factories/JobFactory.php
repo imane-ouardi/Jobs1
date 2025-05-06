@@ -1,7 +1,9 @@
 <?php
+
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Facades\Auth;
 
 class JobFactory extends Factory
 {
@@ -16,6 +18,7 @@ class JobFactory extends Factory
             'category_id' => 1,
             'company_id' => 1,
             'deadline' => now()->addDays(rand(10, 60)),
+            'created_by_email' => Auth::check() ? Auth::user()->email : 'default@example.com',
         ];
     }
 }

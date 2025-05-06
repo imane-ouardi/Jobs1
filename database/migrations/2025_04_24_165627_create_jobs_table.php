@@ -16,10 +16,12 @@ return new class extends Migration
             $table->longText('description');
             $table->string('type');
             $table->string('location')->nullable();
-            $table->string('salary')->nullable();
+            $table->string('salary')->nullable(); 
+            // $table->char('currency', 3)->default('USD');  
             $table->foreignId('category_id')->nullable()->constrained();
             $table->foreignId('company_id')->constrained()->onDelete('cascade');
             $table->date('deadline')->nullable();
+            $table->string('created_by_email')->nullable(); 
             $table->timestamps();
         });
     }

@@ -35,58 +35,60 @@
               </button>
               <nav
                 id="navbarCollapse"
-                class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white dark:bg-dark-2 py-5 shadow-lg lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent dark:lg:bg-transparent lg:py-0 lg:px-4 lg:shadow-none xl:px-6"
+                class="  absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white dark:bg-dark-2 py-5 shadow-lg lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent dark:lg:bg-transparent lg:py-0 lg:px-4 lg:shadow-none xl:px-6"
               >
-                <ul class="blcok lg:flex 2xl:ml-20">
-                  <li class="relative group">
-                    <a
-                      href="#home"
-                      class="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark dark:text-white group-hover:text-primary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:text-body-color dark:lg:text-dark-6"
-                    >
-                      Home
-                    </a>
-                  </li>
-                  <li class="relative group">
-                    <a
-                      href="/#about"
-                      class="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark dark:text-white group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-body-color dark:lg:text-dark-6 xl:ml-10"
-                    >
-                      About
-                    </a>
-                  </li>
-                  <li class="relative group">
-                    <a
-                      href="/#pricing"
-                      class="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark dark:text-white group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-body-color dark:lg:text-dark-6 xl:ml-10"
-                    >
-                      Pricing
-                    </a>
-                  </li>
-                  <li class="relative group">
-                    <a
-                      href="/#team"
-                      class="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark dark:text-white group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-body-color dark:lg:text-dark-6 xl:ml-10"
-                    >
-                      Team
-                    </a>
-                  </li>
-                  <li class="relative group">
-                    <a
-                      href="/#contact"
-                      class="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark dark:text-white group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-body-color dark:lg:text-dark-6 xl:ml-10"
-                    >
-                      Contact
-                    </a>
-                  </li>
-                  <li class="relative group">
-                    <a
-                      href="{{ route('blog') }}"
-                      class="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark dark:text-white group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-body-color dark:lg:text-dark-6 xl:ml-10"
-                    >
-                      Blog
-                    </a>
-                  </li>
-                </ul>
+              <ul class="blcok lg:flex 2xl:ml-20">
+                <li class="relative group">
+                  <a
+                    href="/"
+                    class="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark group-hover:text-primary dark:text-primary lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary lg:group-hover:text-primary lg:group-hover:opacity-70"
+                  >
+                    Home
+                  </a>
+                </li>
+                <li class="relative group">
+                  <a
+                    href="/jobs"
+                    class="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark group-hover:text-primary dark:text-primary lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary lg:group-hover:text-primary lg:group-hover:opacity-70 xl:ml-10"
+                  >
+                    Find job
+                  </a>
+                </li>
+                <li class="relative group">
+                  <a
+                    href="/about"
+                    class="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark group-hover:text-primary dark:text-primary lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary lg:group-hover:text-primary lg:group-hover:opacity-70 xl:ml-10"
+                  >
+                    About
+                  </a>
+                </li>
+                <li class="relative group">
+                  <a
+                    href="/pricing"
+                    class="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark group-hover:text-primary dark:text-primary lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary lg:group-hover:text-primary lg:group-hover:opacity-70 xl:ml-10"
+                  >
+                    Pricing
+                  </a>
+                </li>
+                <li class="relative group">
+                  <a
+                    href="/contact"
+                    class="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark group-hover:text-primary 
+                    dark:text-primary lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary 
+                    lg:group-hover:text-primary lg:group-hover:opacity-70 xl:ml-10"
+                  >
+                    Contact
+                  </a>
+                </li>
+                <li class="relative group">
+                  <a
+                    href="/blog"
+                    class="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark group-hover:text-primary dark:text-primary lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary lg:group-hover:text-primary lg:group-hover:opacity-70 xl:ml-10"
+                  >
+                    Blog
+                  </a>
+                </li>
+              </ul>
               </nav>
             </div>
             <div class="flex items-center justify-end pr-16 lg:pr-0">
@@ -102,7 +104,7 @@
                   id="themeSwitcher"
                   class="sr-only"
                 />
-                <span class="block text-dark dark:hidden dark:text-white">
+                <span class="block text-dark dark:hidden dark:text-primary">
                   <svg
                     class="fill-current"
                     width="24"
@@ -116,7 +118,7 @@
                     />
                   </svg>
                 </span>
-                <span class="hidden text-dark dark:block dark:text-white">
+                <span class="hidden text-dark dark:block dark:text-primary">
                   <svg
                     class="fill-current"
                     width="24"
@@ -165,7 +167,7 @@
               <div class="hidden sm:flex">
                 <a
                   href="{{ route('signin') }}"
-                  class="loginBtn py-2 px-[22px] text-base font-medium text-dark dark:text-white hover:opacity-70"
+                  class="loginBtn py-2 px-[22px] text-base font-medium text-dark dark:text-primary hover:opacity-70"
                 >
                   Sign In
                 </a>

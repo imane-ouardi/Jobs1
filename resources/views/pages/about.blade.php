@@ -4,7 +4,7 @@
   <x-head/>
   <body>
     <!-- ====== Navbar Section Start -->
-    <x-navsecr/>
+    <x-navsec/>
     <!-- ====== Navbar Section End -->
 
     <!-- ====== Banner Section Start -->
@@ -1129,7 +1129,6 @@
     <!-- ====== Back To Top End -->
 
     <!-- ====== Made With Button Start -->
-   <x-made/>
     <!-- ====== Made With Button End -->
 
     <!-- ====== All Scripts -->

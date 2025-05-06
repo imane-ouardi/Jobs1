@@ -15,3 +15,4 @@ class Company extends Model
         return $this->hasMany(Job::class);
     }
 }
+

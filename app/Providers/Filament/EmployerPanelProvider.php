@@ -26,8 +26,12 @@ class EmployerPanelProvider extends PanelProvider
             ->id('employer')
             ->path('employer')
             ->colors([
-                'primary' => Color::Amber,
+                'primary' => Color::Blue,
             ])
+            ->login()
+            ->registration()
+            ->brandLogo("/jobportal.webp")->brandLogoHeight("60px")->homeUrl("/")
+            ->profile()
             ->discoverResources(in: app_path('Filament/Employer/Resources'), for: 'App\\Filament\\Employer\\Resources')
             ->discoverPages(in: app_path('Filament/Employer/Pages'), for: 'App\\Filament\\Employer\\Pages')
             ->pages([

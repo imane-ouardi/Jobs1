@@ -1,173 +1,67 @@
-<section
-      id="pricing"
-      class="relative z-20 overflow-hidden bg-white pb-12 pt-20 dark:bg-dark lg:pb-[90px] lg:pt-[120px]"
-    >
-      <div class="container px-4 mx-auto">
-        <div class="flex flex-wrap -mx-4">
-          <div class="w-full px-4">
-            <div class="mx-auto mb-[60px] max-w-[510px] text-center">
-              <span class="block mb-2 text-lg font-semibold text-primary">
-                Pricing Table
-              </span>
-              <h2
-                class="mb-3 text-3xl font-bold text-dark dark:text-white sm:text-4xl md:text-[40px] md:leading-[1.2]"
-              >
-                Awesome Pricing Plan
-              </h2>
-              <p class="text-base text-body-color dark:text-dark-6">
-                There are many variations of passages of Lorem Ipsum available
-                but the majority have suffered alteration in some form.
-              </p>
-            </div>
+<section id="pricing" class="relative z-20 bg-gradient-to-br from-blue-700 via-blue-900 to-blue-700 py-20 lg:py-[120px]">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-16">
+      <span class="block mb-2 text-lg font-semibold text-cyan-300">Pricing Table</span>
+      <h2 class="mb-3 text-4xl md:text-5xl font-extrabold text-white">Flexible Plans for Every Business</h2>
+      <p class="text-base text-blue-100 max-w-xl mx-auto">
+        Choose the plan that fits your hiring needs. Upgrade, downgrade, or cancel anytime.
+      </p>
+    </div>
+    <div class="flex flex-row flex-wrap justify-center gap-8">
+      <!-- Starter Plan -->
+      <div class="w-full sm:w-1/2 lg:w-1/3 max-w-sm">
+        <div class="bg-white/90 rounded-2xl shadow-xl p-8 flex flex-col items-center hover:scale-105 transition-transform duration-300">
+          <span class="mb-4 text-xl font-bold text-blue-900">Starter</span>
+          <div class="flex items-end mb-8">
+            <span class="text-2xl font-bold text-blue-900">$</span>
+            <span class="text-5xl font-extrabold text-blue-900 mx-1">25</span>
+            <span class="text-base text-blue-400 ml-1">/month</span>
           </div>
-        </div>
-        <div class="flex flex-wrap justify-center -mx-4">
-          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
-            <div
-              class="relative z-10 px-8 py-10 mb-10 overflow-hidden bg-white rounded-xl shadow-pricing dark:bg-dark-2 sm:p-12 lg:px-6 lg:py-10 xl:p-14"
-            >
-              <span
-                class="block mb-5 text-xl font-medium text-dark dark:text-white"
-              >
-                Starter
-              </span>
-              <h2
-                class="mb-11 text-4xl font-semibold text-dark dark:text-white xl:text-[42px] xl:leading-[1.21]"
-              >
-                <span class="text-xl font-medium">$</span>
-                <span class="-ml-1 -tracking-[2px]">25.00</span>
-                <span
-                  class="text-base font-normal text-body-color dark:text-dark-6"
-                >
-                  Per Month
-                </span>
-              </h2>
-              <div class="mb-[50px]">
-                <h5 class="mb-5 text-lg font-medium text-dark dark:text-white">
-                  Features
-                </h5>
-                <div class="flex flex-col gap-[14px]">
-                  <p class="text-base text-body-color dark:text-dark-6">
-                    Up to 1 User
-                  </p>
-                  <p class="text-base text-body-color dark:text-dark-6">
-                    All UI components
-                  </p>
-                  <p class="text-base text-body-color dark:text-dark-6">
-                    Lifetime access
-                  </p>
-                  <p class="text-base text-body-color dark:text-dark-6">
-                    Free updates
-                  </p>
-                </div>
-              </div>
-              <a
-                href="javascript:void(0)"
-                class="inline-block py-3 text-base font-medium text-center text-white transition rounded-md bg-primary px-7 hover:bg-blue-dark"
-              >
-                Purchase Now
-              </a>
-            </div>
-          </div>
-          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
-            <div
-              class="relative z-10 px-8 py-10 mb-10 overflow-hidden bg-white rounded-xl shadow-pricing dark:bg-dark-2 sm:p-12 lg:px-6 lg:py-10 xl:p-14"
-            >
-              <p
-                class="absolute right-[-50px] top-[60px] inline-block -rotate-90 rounded-bl-md rounded-tl-md bg-primary px-5 py-2 text-base font-medium text-white"
-              >
-                Recommended
-              </p>
-              <span
-                class="block mb-5 text-xl font-medium text-dark dark:text-white"
-              >
-                Basic
-              </span>
-              <h2
-                class="mb-11 text-4xl font-semibold text-dark dark:text-white xl:text-[42px] xl:leading-[1.21]"
-              >
-                <span class="text-xl font-medium">$</span>
-                <span class="-ml-1 -tracking-[2px]">59.00</span>
-                <span
-                  class="text-base font-normal text-body-color dark:text-dark-6"
-                >
-                  Per Month
-                </span>
-              </h2>
-              <div class="mb-[50px]">
-                <h5 class="mb-5 text-lg font-medium text-dark dark:text-white">
-                  Features
-                </h5>
-                <div class="flex flex-col gap-[14px]">
-                  <p class="text-base text-body-color dark:text-dark-6">
-                    Up to 1 User
-                  </p>
-                  <p class="text-base text-body-color dark:text-dark-6">
-                    All UI components
-                  </p>
-                  <p class="text-base text-body-color dark:text-dark-6">
-                    Lifetime access
-                  </p>
-                  <p class="text-base text-body-color dark:text-dark-6">
-                    Free updates
-                  </p>
-                </div>
-              </div>
-              <a
-                href="javascript:void(0)"
-                class="inline-block py-3 text-base font-medium text-center text-white transition rounded-md bg-primary px-7 hover:bg-blue-dark"
-              >
-                Purchase Now
-              </a>
-            </div>
-          </div>
-          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
-            <div
-              class="relative z-10 px-8 py-10 mb-10 overflow-hidden bg-white rounded-xl shadow-pricing dark:bg-dark-2 sm:p-12 lg:px-6 lg:py-10 xl:p-14"
-            >
-              <span
-                class="block mb-5 text-xl font-medium text-dark dark:text-white"
-              >
-                Premium
-              </span>
-              <h2
-                class="mb-11 text-4xl font-semibold text-dark dark:text-white xl:text-[42px] xl:leading-[1.21]"
-              >
-                <span class="text-xl font-medium">$</span>
-                <span class="-ml-1 -tracking-[2px]">99.00</span>
-                <span
-                  class="text-base font-normal text-body-color dark:text-dark-6"
-                >
-                  Per Month
-                </span>
-              </h2>
-              <div class="mb-[50px]">
-                <h5 class="mb-5 text-lg font-medium text-dark dark:text-white">
-                  Features
-                </h5>
-                <div class="flex flex-col gap-[14px]">
-                  <p class="text-base text-body-color dark:text-dark-6">
-                    Up to 1 User
-                  </p>
-                  <p class="text-base text-body-color dark:text-dark-6">
-                    All UI components
-                  </p>
-                  <p class="text-base text-body-color dark:text-dark-6">
-                    Lifetime access
-                  </p>
-                  <p class="text-base text-body-color dark:text-dark-6">
-                    Free updates
-                  </p>
-                </div>
-              </div>
-              <a
-                href="javascript:void(0)"
-                class="inline-block py-3 text-base font-medium text-center text-white transition rounded-md bg-primary px-7 hover:bg-blue-dark"
-              >
-                Purchase Now
-              </a>
-            </div>
-          </div>
+          <ul class="mb-8 space-y-3 text-blue-800 text-base text-left w-full">
+            <li class="flex items-center gap-2"><span class="text-emerald-400">✔</span> 1 Job Posting</li>
+            <li class="flex items-center gap-2"><span class="text-emerald-400">✔</span> Basic Support</li>
+            <li class="flex items-center gap-2"><span class="text-emerald-400">✔</span> Visible to All Candidates</li>
+            <li class="flex items-center gap-2"><span class="text-emerald-400">✔</span> Free Updates</li>
+          </ul>
+          <a href="#" class="w-full py-3 rounded-lg bg-blue-600 text-white font-semibold text-lg hover:bg-blue-800 transition">Get Started</a>
         </div>
       </div>
-    </section>
+      <!-- Basic Plan -->
+      <div class="w-full sm:w-1/2 lg:w-1/3 max-w-sm">
+        <div class="bg-white/90 rounded-2xl shadow-xl p-8 flex flex-col items-center hover:scale-105 transition-transform duration-300">
+          <span class="mb-4 text-xl font-bold text-blue-900">Basic</span>
+          <div class="flex items-end mb-8">
+            <span class="text-2xl font-bold text-blue-900">$</span>
+            <span class="text-5xl font-extrabold text-blue-900 mx-1">59</span>
+            <span class="text-base text-blue-400 ml-1">/month</span>
+          </div>
+          <ul class="mb-8 space-y-3 text-blue-800 text-base text-left w-full">
+            <li class="flex items-center gap-2"><span class="text-emerald-400">✔</span> 5 Job Postings</li>
+            <li class="flex items-center gap-2"><span class="text-emerald-400">✔</span> Priority Support</li>
+            <li class="flex items-center gap-2"><span class="text-emerald-400">✔</span> Company Logo on Listings</li>
+            <li class="flex items-center gap-2"><span class="text-emerald-400">✔</span> Featured in Newsletter</li>
+          </ul>
+          <a href="#" class="w-full py-3 rounded-lg bg-blue-600 text-white font-semibold text-lg hover:bg-blue-800 transition">Get Started</a>
+        </div>
+      </div>
+      <!-- Premium Plan -->
+      <div class="w-full sm:w-1/2 lg:w-1/3 max-w-sm">
+        <div class="bg-white/90 rounded-2xl shadow-xl p-8 flex flex-col items-center hover:scale-105 transition-transform duration-300">
+          <span class="mb-4 text-xl font-bold text-blue-900">Premium</span>
+          <div class="flex items-end mb-8">
+            <span class="text-2xl font-bold text-blue-900">$</span>
+            <span class="text-5xl font-extrabold text-blue-900 mx-1">99</span>
+            <span class="text-base text-blue-400 ml-1">/month</span>
+          </div>
+          <ul class="mb-8 space-y-3 text-blue-800 text-base text-left w-full">
+            <li class="flex items-center gap-2"><span class="text-emerald-400">✔</span> Unlimited Job Postings</li>
+            <li class="flex items-center gap-2"><span class="text-emerald-400">✔</span> 24/7 Premium Support</li>
+            <li class="flex items-center gap-2"><span class="text-emerald-400">✔</span> Top Placement on Listings</li>
+            <li class="flex items-center gap-2"><span class="text-emerald-400">✔</span> Dedicated Account Manager</li>
+          </ul>
+          <a href="#" class="w-full py-3 rounded-lg bg-blue-600 text-white font-semibold text-lg hover:bg-blue-800 transition">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

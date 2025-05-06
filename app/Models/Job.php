@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -8,7 +9,17 @@ class Job extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['title', 'description', 'type', 'location', 'salary', 'category_id', 'company_id', 'deadline'];
+    protected $fillable = [
+        'title', 
+        'description', 
+        'type', 
+        'location', 
+        'salary', 
+        'category_id', 
+        'company_id', 
+        'deadline',
+        'created_by_email', 
+    ];
 
     public function company()
     {
@@ -24,4 +35,5 @@ class Job extends Model
     {
         return $this->hasMany(Application::class);
     }
+
 }

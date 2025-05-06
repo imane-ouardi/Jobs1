@@ -35,7 +35,7 @@
             </li>
             <li class="relative group">
               <a
-                href="#findjob"
+                href="#Jobs"
                 class="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10"
               >
                 Find job
@@ -59,16 +59,10 @@
             </li>
             <li class="relative group">
               <a
-                href="#team"
-                class="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10"
-              >
-                Team
-              </a>
-            </li>
-            <li class="relative group">
-              <a
                 href="#contact"
-                class="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10"
+                class="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark group-hover:text-primary 
+                dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white 
+                lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10"
               >
                 Contact
               </a>

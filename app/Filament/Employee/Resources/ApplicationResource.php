@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Filament\Resources;
+namespace App\Filament\Employee\Resources;
 
-use App\Filament\Resources\JobResource\Pages;
-use App\Filament\Resources\JobResource\RelationManagers;
-use App\Models\Job;
+use App\Filament\Employee\Resources\ApplicationResource\Pages;
+use App\Filament\Employee\Resources\ApplicationResource\RelationManagers;
+use App\Models\Application;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -13,18 +13,25 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
-class JobResource extends Resource
+class ApplicationResource extends Resource
 {
-    protected static ?string $model = Job::class;
+    protected static ?string $model = Application::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
     public static function form(Form $form): Form
     {
         return $form
-            ->schema([
-                //
-            ]);
+        ->schema([
+            Forms\Components\Textarea::make('cover_letter')
+                ->label('Cover Letter')
+                ->required(),
+            Forms\Components\FileUpload::make('cv')
+                ->label('CV')
+                ->directory('cvs')
+                ->acceptedFileTypes(['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'])
+                ->maxSize(2048),
+        ]);
     }
 
     public static function table(Table $table): Table
@@ -56,9 +63,9 @@ class JobResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListJobs::route('/'),
-            'create' => Pages\CreateJob::route('/create'),
-            'edit' => Pages\EditJob::route('/{record}/edit'),
+            'index' => Pages\ListApplications::route('/'),
+            'create' => Pages\CreateApplication::route('/create'),
+            'edit' => Pages\EditApplication::route('/{record}/edit'),
         ];
     }
 }
